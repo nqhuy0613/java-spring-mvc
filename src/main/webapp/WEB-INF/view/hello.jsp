@@ -2,11 +2,12 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
         <html lang="en">
+        <!-- <c>import vn.hoidanit.laptopshop.domain.User; </c> -->
 
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
+            <title>HomePageBro</title>
             <!-- Latest compiled and minified CSS -->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,13 +20,13 @@
         </head>
 
         <body>
-            hello from jsp
-            <h1>
-                ${eric}
-            </h1>
-            <h2>
-                ${danit}
-            </h2>
+            5ting!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            <h5>
+                <c:forEach var="ch" items="${arrUsers}" varStatus="loop">
+                    <p>Tên: ${ch.fullName}</p>
+                </c:forEach>
+            </h5>
+
             <button class="btn btn-warning"> Submit</button>
         </body>
 
