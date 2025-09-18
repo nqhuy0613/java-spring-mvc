@@ -42,9 +42,11 @@
                                         <th scope="row">${user.id}</th>
                                         <td>${user.email}</td>
                                         <td>${user.fullName}</td>
-                                        <td><a href="/admin/user/${user.id}" class="btn btn-success btn-sm">View</a> <a
+                                        <td><a href="/admin/user/${user.id}" class="btn btn-success btn-sm">View</a>
+                                            <a href="/admin/user/update/${user.id}"
                                                 class="btn btn-warning btn-sm">Update</a>
-                                            <a class="btn btn-danger btn-sm">Delete</a>
+                                            <a href="/admin/user/delete/${user.id}" class=" btn btn-danger
+                                                btn-sm">Delete</a>
                                         </td>
                                     </tr>
                                 </c:forEach>
